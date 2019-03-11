@@ -1,0 +1,132 @@
+// FONT STYLES
+@import "font";
+
+// VARIABLES
+@import "variables";
+
+// CUSTOM STYLES
+@import "main";
+@import "blocks/header";
+@import "blocks/content";
+@import "blocks/footer";
+@import "_bootstrap";
+@import "_normalize";
+@import "slick";
+@import "slick-theme";
+@import "swipper";
+@import "media";
+
+body {
+    font-family: 'Segoeui';
+    font-size: 12px;
+    color: $mainColor;
+    min-width: 360px;
+}
+
+.container {
+   max-width: 1440px;
+   margin: auto;
+}
+
+.content {
+    max-width: 1180px;
+    margin: auto;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+
+a {
+    cursor: pointer;
+}
+
+
+.call-btn {
+    display: flex;
+
+
+    &__link {
+    padding: 10px;
+    border-radius: 3px;
+    padding: 6px 10px;
+        &.header-call {
+            color: #fff;
+            border: 1px solid #fff;
+            
+            &:hover,
+            &:focus {
+                text-decoration: none;
+                color: #fff;
+
+                &:before {
+                    background-image: url(./../img/call.svg);
+                }
+          }
+        }
+
+        &.footer-call {
+            color: $textColor;
+            border: 1px solid $textColor;
+            margin-left: 41px;
+            &:hover,
+            &:focus {
+                text-decoration: none;
+                color: $textColor;
+            }
+            &:before {
+                background-image: url(./../img/footer-call.svg);
+            }
+
+        }
+        display: flex;
+        font-family: 'Segoeui';
+        font-weight: 600;
+        font-size: 15px;
+        align-items: center;
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+        &:before {
+            content: '';
+            display: block;
+            height: 16px;
+            width: 16px;
+            background-image: url(./../img/call.svg);
+            margin-right: 6px;
+        }
+    }
+
+}
+
+.search {
+    display: flex;
+    align-items: flex-end;
+
+    span {
+        line-height: 1;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-image: url(./../img/icon/search.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-left: 6px;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+

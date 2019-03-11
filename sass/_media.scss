@@ -1,0 +1,137 @@
+.hidden-lg {
+    display: none;
+}
+
+
+@media (max-width: 1200px) {
+    .content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header-inner {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header-inner {
+        flex-wrap: wrap;
+    }
+
+    .header-icon__text h1 {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 1150px) {
+   
+    .hidden-lg {
+        display: block;
+    }
+
+    .hidden-md {
+        display: none;
+    }
+
+
+
+    .header-slider {
+        width: 400px;
+    }
+
+    .header-info--right {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media (max-width: 760px) {
+    .header--str .call-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 20px 20px 0 0 ;
+    }
+
+    .header-menu__list, .navigation__list {
+      flex-wrap: wrap;
+    }    
+    
+    .navigation__list {
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+
+      
+    .header-menu__item.active {
+            &:after {
+                border: 2px solid #fff;
+                border-bottom: unset;
+                bottom: -2px;
+            }
+    }
+
+    .header-menu__item {
+        margin-bottom: 10px
+    }
+
+    .footer-inner {
+        flex-wrap: wrap;
+    }
+
+    .footer-logo__text p{
+        font-size: 14px;
+    }
+
+    .footer--right {
+        width: 100%;
+       margin-top: 20px;
+    }
+}
+
+@media (max-width: 650px) {
+  .copyright {
+      margin-top: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+    .call-btn__link {
+        
+        &:before {
+            margin-right: 0 !important;
+        }
+
+        span {
+            display: none;
+        }
+    }
+
+    
+    .header-slider {
+        display: none;
+    }   
+
+    .header-icon__text h1 {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 400px) {
+    .header--str .call-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: auto;
+        bottom: 0;
+    }
+}
+
