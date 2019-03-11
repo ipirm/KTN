@@ -1,3 +1,3 @@
 # KTN
 
-ktnaz.gs-host.az
+ktnaz.gs-host.com
